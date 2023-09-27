@@ -1,3 +1,18 @@
 body {
     background-color: purple;
 }
+
+.box {
+    
+    border: 3px solid black;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-left: 15%;
+    background-color: #9e7960;
+}
+
+.footer {
+    
+    text-align: right;
+    margin-top: 20%;
+}
