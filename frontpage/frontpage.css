@@ -22,6 +22,6 @@ div.text {
 
 .footer {
     color: white;
-    text-align: end ;
+    text-align: end, left ;
     margin-top: 20%;
 }
