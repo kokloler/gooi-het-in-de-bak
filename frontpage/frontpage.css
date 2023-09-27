@@ -7,18 +7,21 @@ body {
     margin-right: 15%;
     margin-top: 5%;
     margin-left: 15%;
-    background-color: #9e7960;
+    background-color: #c4916e;
     border-radius: 25px;
     text-align: left;
+    padding-top: 2px;
+    padding-bottom: 200px;
+    padding-left: 15px;
     
 
 }
 div.text {
-    margin-left: 15px;
+    color: black;
 }
 
 .footer {
-    
-    text-align: right;
+    color: white;
+    text-align: end ;
     margin-top: 20%;
 }
