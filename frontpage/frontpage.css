@@ -1,7 +1,6 @@
 body {
-    background-color: purple;
+    background-image: url("images/background.jpg"); 
 }
-
 .box {
     
     border: 3px solid black;
@@ -9,6 +8,13 @@ body {
     margin-top: 5%;
     margin-left: 15%;
     background-color: #9e7960;
+    border-radius: 25px;
+    text-align: left;
+    
+
+}
+div.text {
+    margin-left: 15px;
 }
 
 .footer {
