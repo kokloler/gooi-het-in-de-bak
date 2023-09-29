@@ -68,7 +68,7 @@ input[type="checkbox"]{
     padding: 0 40px 0 50px;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1150px) {
   nav .menu-btn i{
     display: block;
   }
@@ -79,7 +79,7 @@ input[type="checkbox"]{
     position: fixed;
     top: 70px;
     left: -100%;
-    background: #f2f2f2;
+    background: #ededed;/*achtergrond kleur hamburger-meneu */
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -149,4 +149,9 @@ div.text {
     text-align: end ;
     margin-top: 20%;
     margin-right: 2px;
+}
+/* Footer op bodem houden*/
+main {
+  margin: 0 auto;
+  min-height: calc(100vh - 211px - 58px);
 }
