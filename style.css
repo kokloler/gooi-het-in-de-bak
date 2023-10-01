@@ -93,13 +93,13 @@ nav {
     } 
     nav ul li{
       width: 100%;
-      margin: 40px 0;
+      margin: 40px 0; /*afstand van tekst in hamburger-menu*/
     }
     nav ul li a{
       width: 100%;
       margin-left: -100%;
       display: block;
-      font-size: 22px;
+      font-size: 22px; /*tekst groote in hamburger-menu*/
       transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
     #click:checked ~ ul li a{
@@ -108,7 +108,7 @@ nav {
     nav ul li a.active,
     nav ul li a:hover{
       background: none;
-      color: #054c38;
+      color: #054c38; /* active + hover tekst kleur */
     }
     nav .logo{
       color: #93ada6;
@@ -116,7 +116,7 @@ nav {
       font-weight: 600;
     }
     nav ul li a{
-      color: #38b08e; /* Non-active tekst kleur */
+      color: #2f8f74; /* Non-active tekst kleur */
     }
   }
   .no-scroll {
