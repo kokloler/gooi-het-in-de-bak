@@ -19,7 +19,8 @@ h1 {
     color: #000000; /* Kleur van de vraagtekst */
 }
 .question:hover {
-    color: #333;
+    font-size: 18.5px;
+    transition: all 0.2s ease;
 }
 
 .answer {
