@@ -1,5 +1,4 @@
 .box {
-    
     border: 3px solid black;
     margin-right: 15%;
     margin-top: 1%;
@@ -10,16 +9,8 @@
     padding-top: 2px;
     padding-bottom: 200px;
     padding-left: 15px;
-    
-
 }
+
 div.text {
     color: black;
-}
-
-.footer {
-    color: white;
-    text-align: end ;
-    margin-top: 20%;
-    margin-right: 2px;
 }

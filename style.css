@@ -130,3 +130,16 @@ nav {
       margin-left: 0px;
       margin-right: 0px;
   }
+
+  .footer {
+    color: white;
+    text-align: end ;
+    margin-top: 20%;
+    margin-right: 2px;
+}
+
+/* Footer op bodem houden*/
+main {
+  margin: 0 auto;
+  min-height: calc(100vh - 211px - 58px);
+}
