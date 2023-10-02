@@ -6,20 +6,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     checkbox.addEventListener('change', function() {
         if (this.checked) {
-            body.classList.add('no-scroll'); // Voeg de "no-scroll" klasse toe
+            body.classList.add('no-scroll'); // Voeg de "no-scroll" class toe
             window.scrollTo(0, 0); // Scroll naar bovenaan de pagina
         } else {
-            body.classList.remove('no-scroll'); // Verwijder de "no-scroll" klasse
+            body.classList.remove('no-scroll'); // Verwijder de "no-scroll" class
         }
-    });
-
-    // Voeg een eventlistener toe aan de "logo" om naar boven te scrollen wanneer erop wordt geklikt
-    const logo = document.querySelector('.logo');
-    logo.addEventListener('click', function() {
-        if (checkbox.checked) {
-            checkbox.checked = false;
-            body.classList.remove('no-scroll');
-        }
-        window.scrollTo(0, 0); // Scroll naar bovenaan de pagina
     });
 });

@@ -131,15 +131,22 @@ nav {
       margin-right: 0px;
   }
 
-  .footer {
+  footer {
+    background-color: #054c38;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
     color: white;
-    text-align: end ;
-    margin-top: 20%;
-    margin-right: 2px;
+    font-size: 14px;
 }
 
 /* Footer op bodem houden*/
 main {
   margin: 0 auto;
-  min-height: calc(100vh - 211px - 58px);
+  min-height: calc(125vh - 211px - 58px);
 }

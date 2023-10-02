@@ -1,8 +1,7 @@
 .box {
-    
     border: 3px solid black;
     margin-right: 15%;
-    margin-top: 1%;
+    margin-top: 20px;
     margin-left: 15%;
     background-color: #c4916e;
     border-radius: 25px;
@@ -10,9 +9,8 @@
     padding-top: 2px;
     padding-bottom: 200px;
     padding-left: 15px;
-    
-
 }
+
 div.text {
     color: black;
 }
