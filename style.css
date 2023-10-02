@@ -138,6 +138,7 @@ nav {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
 
 .footer {
@@ -149,4 +150,34 @@ nav {
 main {
   margin: 0 auto;
   min-height: calc(125vh - 211px - 58px);
+}
+
+/* bubble */
+.scroll-to-top-bubble {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0074d9;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 99; /* Ensure it's above other elements */
+}
+
+.scroll-to-top-bubble i {
+  transform: translateY(-2px);
+}
+
+.scroll-to-top-bubble.active {
+  display: block;
+}
+
+.scroll-to-top-bubble.active:hover {
+  background-color: #0056b3;
 }
