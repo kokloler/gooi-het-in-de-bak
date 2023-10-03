@@ -8,23 +8,23 @@ h1 {
 }
 @media (max-width: 700px) {
     h1 {
-        font-size: 28px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+        font-size: 28px; 
     }
 }
 @media (max-width: 480px) {
     h1 {
-        font-size: 24px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+        font-size: 24px; 
     }
-    @media (max-width: 330px) {
-        h1 {
-            font-size: 23px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
-        }
+}
+@media (max-width: 330px) {
+    h1 {
+        font-size: 22px; 
     }
 }
 
+/* FAQ-container */
 .container {
     max-width: 800px;
-    margin: 0 auto;
     padding: 15px;
     margin: 0 auto; /* Horizontaal centreren op de pagina */
     background-color: #ffffff; /* Achtergrondkleur van de container */
@@ -42,13 +42,13 @@ h1 {
 }
 
 .faq {
-    margin-bottom: 20px;
-    border-top: 1px solid #ccc; /* Voeg een grijze bovenste scheidingslijn toe */
-    padding-top: 10px; /* Ruimte boven de vraag */
+    margin-bottom: 9px;
+    border-top: 1px solid #ccc;
+    padding: 18px 0 10px; /* Ruimte boven en onder de vraag aanpassen */
 }
 
 .faq:first-child {
-    border-top: none; /* Verwijder de bovenste scheidingslijn voor de eerste vraag */
+    border-top: none;
 }
 
 .faq-question {
@@ -56,12 +56,11 @@ h1 {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding-bottom: 5px;
 }
 
 .faq-question h2 {
     margin: 0;
-    font-size: 18px; /* Pas de lettergrootte van de vraagtekst aan */
+    font-size: 18px;
 }
 
 .faq-answer {
@@ -75,12 +74,17 @@ h1 {
 }
 
 .faq-question i {
-    margin-right: 5px; /* Pas de rechtermarge van het "v"-symbool aan */
-}
-.faq-question i {
-    transition: transform 0.3s; /* Voeg een overgang toe voor soepele animatie */
+    margin-right: 5px;
+    transition: transform 0.3s;
 }
 
 .faq.active .faq-question i {
-    transform: rotate(180deg); /* Draai het "v"-symbool omhoog (180 graden) */
+    transform: rotate(180deg);
 }
+
+/* Speciale klasse voor de eerste vraag */
+.first-faq { 
+    padding-top: 8px;
+}
+
+/* <--- Einde FAQ-container ---> */
