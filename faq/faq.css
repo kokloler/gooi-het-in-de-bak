@@ -21,36 +21,15 @@ h1 {
         }
     }
 }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-}
-.question {
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    color: #000000; /* Kleur van de vraagtekst */
-}
-.question:hover {
-    font-size: 18.5px;
-    transition: all 0.2s ease;
-}
-
-.answer {
-    font-size: 16px;
-    display: none;
-    margin-bottom: 15px;
-    color: #333; /* Kleur van het antwoordtekst */
-}
-
-.container {
+    padding: 15px;
     margin: 0 auto; /* Horizontaal centreren op de pagina */
     background-color: #ffffff; /* Achtergrondkleur van de container */
     border-radius: 10px;
     text-align: left;
-    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schaduw toevoegen */
     margin-top: 20px; /* Ruimte boven de container toevoegen */
     margin-bottom: 20px; /* Ruimte onder de container toevoegen */
@@ -62,16 +41,46 @@ h1 {
     }
 }
 
-.question i {
-    margin-left: 5px; /* Ruimte tussen de tekst en het symbool toevoegen */
-    font-size: 12px; /* Pas de grootte van het symbool aan */
+.faq {
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc; /* Voeg een grijze bovenste scheidingslijn toe */
+    padding-top: 10px; /* Ruimte boven de vraag */
 }
-.faq-item {
+
+.faq:first-child {
+    border-top: none; /* Verwijder de bovenste scheidingslijn voor de eerste vraag */
+}
+
+.faq-question {
+    display: flex;
     justify-content: space-between;
-    padding: 8px 0;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 5px;
 }
 
+.faq-question h2 {
+    margin: 0;
+    font-size: 18px; /* Pas de lettergrootte van de vraagtekst aan */
+}
 
-.question-toggle {
-    cursor: pointer;
+.faq-answer {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.faq.active .faq-answer {
+    display: block;
+}
+
+.faq-question i {
+    margin-right: 5px; /* Pas de rechtermarge van het "v"-symbool aan */
+}
+.faq-question i {
+    transition: transform 0.3s; /* Voeg een overgang toe voor soepele animatie */
+}
+
+.faq.active .faq-question i {
+    transform: rotate(180deg); /* Draai het "v"-symbool omhoog (180 graden) */
 }
