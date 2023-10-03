@@ -83,7 +83,7 @@ nav .logo{
   font-size: 30px;
   font-weight: 600;
 }
-@media (max-width: 400px){
+@media (max-width: 490px){
   nav .logo{
     font-size: 25px;
   }
@@ -151,7 +151,7 @@ input[type="checkbox"]{
   } 
   nav ul li{
     width: 100%;
-    margin: 40px 0; /*afstand van tekst in hamburger-menu*/
+    margin: 35px 0; /*afstand van tekst in hamburger-menu*/
   }
   nav ul li a{
     width: 100%;
@@ -166,16 +166,37 @@ input[type="checkbox"]{
   nav ul li a.active,
   nav ul li a:hover{
     background: none;
-    color: #054c38; /* active + hover tekst kleur */
+    color: #218569; /* active + hover tekst kleur */
   }
   nav .logo{
     color: #93ada6;
     font-size: 30px;
     font-weight: 600;
   }
+  @media (max-width: 700px) {
+    nav .logo {
+        font-size: 25px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+    }
+}
+@media (max-width: 370px) {
+  nav .logo {
+      font-size: 22px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+  }
+}
+@media (max-width: 370px) {
+  nav .logo {
+      font-size: 19px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+      margin-left: -30px;
+  }
+  nav .menu-btn i{
+    font-size: 25px; /*grote van "hamburger-meneu" knop*/
+    margin-left: -5%;
+  }
+}
   nav ul li a{
     color: #2f8f74; /* Non-active tekst kleur */
   }
+  
 }
 .no-scroll {
   overflow: hidden;

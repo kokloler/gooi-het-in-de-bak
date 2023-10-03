@@ -6,6 +6,21 @@ header {
 h1 {
     font-size: 36px;
 }
+@media (max-width: 700px) {
+    h1 {
+        font-size: 28px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+    }
+    @media (max-width: 330px) {
+        h1 {
+            font-size: 23px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+        }
+    }
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -31,7 +46,6 @@ h1 {
 }
 
 .container {
-    max-width: 800px;
     margin: 0 auto; /* Horizontaal centreren op de pagina */
     background-color: #ffffff; /* Achtergrondkleur van de container */
     border-radius: 10px;
@@ -40,4 +54,24 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schaduw toevoegen */
     margin-top: 20px; /* Ruimte boven de container toevoegen */
     margin-bottom: 20px; /* Ruimte onder de container toevoegen */
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 90%; /* Verminder de maximale breedte op kleinere schermen */
+    }
+}
+
+.question i {
+    margin-left: 5px; /* Ruimte tussen de tekst en het symbool toevoegen */
+    font-size: 12px; /* Pas de grootte van het symbool aan */
+}
+.faq-item {
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+
+.question-toggle {
+    cursor: pointer;
 }
