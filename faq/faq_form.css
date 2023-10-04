@@ -167,7 +167,7 @@ nav ul li a{
 nav ul li a.active,
 nav ul li a:hover{
   color: #f2f2f2;
-  background: #058053;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Voeg een schaduw toe */
 }
 @media (max-width: 1000px){
   nav{
@@ -205,7 +205,7 @@ nav ul li a:hover{
     display: none; /* Verberg het pijlpictogram standaard */
 }
 
-/* Toon het pijlpictogram op schermen kleiner dan 500px */
+/* Toon pijlpictogram op schermen kleiner dan 500px */
 @media (max-width: 500px) {
     .text-link {
         display: none; /* Verberg de tekst "Terug" */
@@ -213,14 +213,15 @@ nav ul li a:hover{
 
     .icon-link {
         display: inline; /* Toon het pijlpictogram */
-        font-size: 24px; /* Pas de grootte van het pictogram aan */
-        text-decoration: none; /* Verwijder de onderstreping */
-        transition: box-shadow 0.3s; /* Voeg een overgangseffect toe aan de schaduw */
+        font-size: 24px; /* Grootte van het pictogram*/
+        text-decoration: none; 
+        transition: box-shadow 0.3s; /* Voeg een overgangseffect*/
+        margin-right: -22px; 
     }
 
     /* Voeg schaduw toe bij hover */
     .icon-link:hover {
         background-color: transparent;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Voeg een schaduw toe */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
     }
 }
