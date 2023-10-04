@@ -190,6 +190,7 @@ nav ul li a:hover{
   }
 } 
 }
+
 /* Weergave van tekst "Terug" op schermen groter dan 500px */
 .nav-item {
     display: flex;
@@ -198,7 +199,7 @@ nav ul li a:hover{
 
 .text-link {
     display: inline;
-    margin-right: 20px; /* Optioneel: voeg wat ruimte tussen de menu-items toe */
+    margin-right: 20px; 
 }
 
 .icon-link {
@@ -215,7 +216,7 @@ nav ul li a:hover{
         display: inline; /* Toon het pijlpictogram */
         font-size: 24px; /* Grootte van het pictogram*/
         text-decoration: none; 
-        transition: box-shadow 0.3s; /* Voeg een overgangseffect*/
+        transition: box-shadow 0.2s; /* Voeg een overgangseffect*/
         margin-right: -22px; 
     }
 
@@ -225,3 +226,50 @@ nav ul li a:hover{
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
     }
 }
+
+/* Meldingen voor fomulier */
+.validation-error {
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  border-radius: 1px;
+}
+
+.success-message {
+  color: #006400;
+  border: 1px solid #006400;
+  background-color: #90ee90;
+  border-radius: 1px;
+}
+
+.error-message {
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  border-radius: 1px;
+}
+
+.notification-container {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px #cccccc9c, -1px -1px 4px #cccccc9c;
+  text-align: center;
+  width: 300px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: -30px;
+  padding: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+  position: relative;
+}
+
+/* CSS voor de fade-out-animatie */
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease;
+}  
