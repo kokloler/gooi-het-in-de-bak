@@ -28,7 +28,7 @@ h1 {
     padding: 15px;
     margin: 0 auto; /* Horizontaal centreren op de pagina */
     background-color: #ffffff; /* Achtergrondkleur van de container */
-    border-radius: 10px;
+    border-radius: 9px;
     text-align: left;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schaduw toevoegen */
     margin-top: 20px; /* Ruimte boven de container toevoegen */
@@ -88,3 +88,28 @@ h1 {
 }
 
 /* <--- Einde FAQ-container ---> */
+
+.faq-help {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faq-help p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ask-question-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Achtergrondkleur van de knop */
+    color: #fff; /* Tekstkleur van de knop */
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ask-question-button:hover {
+    background-color: #0056b3; /* Achtergrondkleur van de knop bij hover */
+}

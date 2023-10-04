@@ -1,0 +1,91 @@
+body {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7)),url(../images/FaqBackground.png)!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+p {
+    font-size: 10px;
+    margin-top: 11px;
+    color: #5d5d5d;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: #333;
+    
+}
+@media (max-width: 650px){
+    h1{
+      font-size: 30px;
+    }
+}
+@media (max-width: 300px){
+    h1{
+      font-size: 25px;
+    }
+}
+
+.container {
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto; /* Horizontaal centreren op de pagina */
+    background-color: #ffffff; /* Achtergrondkleur van de container */
+    border-radius: 2px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schaduw toevoegen */
+    margin-top: 20px; /* Ruimte boven de container toevoegen */
+    margin-bottom: 20px; /* Ruimte onder de container toevoegen */
+}
+
+#main_reg {
+    margin: 50px auto;
+    width: 90%;
+    text-align: left; /* Plaats de inhoud van de container aan de linkerkant */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Plaats de labels aan de linkerkant */
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: vertical;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#reg_button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block; /* Zet de verzendknop om naar inline-block */
+    margin-right: 10px; /* Voeg een rechtermarge toe om de knop van de invoervelden te scheiden */
+}
+
+#reg_button:hover {
+    background-color: #0056b3;
+}
+
+
