@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="..//images/form.ico">
     <title>Stel een vraag</title>
-    <link rel="stylesheet" type="text/css" href="..//style.css">
     <link rel="stylesheet" type="text/css" href="..//faq/faq_form.css">
+    <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="no-hamburger-menu">
     <nav>
         <div class="logo">Gooi het in de bak</div>
         <ul>
-            <li><a href="../faq/faq.html">Terug</a></li>
-        </ul>
+        <li class="nav-item">
+            <a href="../faq/faq.html" class="text-link">Terug</a>
+            <a href="../faq/faq.html" class="icon-link"><i class="fas fa-arrow-left"></i></a>
+        </li>
+    </ul>
     </nav>
 
     <main id="main_reg">
