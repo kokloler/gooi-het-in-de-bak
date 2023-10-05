@@ -30,6 +30,35 @@ table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+/* Responsieve lijststijl */
+.overzicht-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.overzicht-item {
+    margin-bottom: 20px;
+}
+
+.overzicht-item strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.overzicht-item span {
+    font-weight: bold;
+}
+
+/* Stijl voor de lijst op grotere schermen */
+@media (min-width: 769px) {
+    .overzicht-container {
+        display: none;
+    }
+}
+
 /* <--- Algemene pagina style ---> */
 body {
     margin-top: 0px;

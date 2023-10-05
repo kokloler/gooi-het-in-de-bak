@@ -26,6 +26,7 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="..//images/overzicht.ico">
     <link rel="stylesheet" type="text/css" href="medewerker.css">
     <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
     <title>Overzicht</title>
@@ -82,7 +83,41 @@ mysqli_close($conn);
                 ?>
             </tbody>
         </table>
-    </div>
+
+    <div class="overzicht-container">
+    <?php
+        // Verbinding maken met de database
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "faq";
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+        }
+
+        $sql = "SELECT naam, email, vraag FROM form";
+        $result = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                echo "<div class='overzicht-item'>";
+                echo "<strong>Naam:</strong> " . $row['naam'];
+                echo "<br>";
+                echo "<strong>E-mail:</strong> " . $row['email'];
+                echo "<br>";
+                echo "<strong>Vraag:</strong> " . $row['vraag'];
+                echo "</div>";
+            }
+        } else {
+            echo "Geen gegevens beschikbaar";
+        }
+
+        mysqli_close($conn);
+    ?>
+ </div>
+</div>
 
 </body>
 </html>

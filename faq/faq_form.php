@@ -85,7 +85,7 @@ mysqli_close($conn);
 
                 <input type="submit" value="Verstuur*" id="reg_button">
             </form>
-            <p>* Alle inzendingen worden anoniem verwerkt.</p>
+            <p>* Vragen worden binnen 2 werkdagen beantwoord.</p>
         </div>
     </main>
 
