@@ -1,0 +1,205 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('..//images/login.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .login-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-container h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color:#1859c9;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color:#1859c9db;
+  }
+  
+  .error {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+.form-group input[type="submit"],
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  box-sizing: border-box;
+}
+
+/* Toegevoegde code voor responsief ontwerp vanaf 600px*/
+@media (max-width: 600px) {
+  .login-container {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    padding: 10px 20px;
+  }
+
+  .login-container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .form-group input[type="submit"] {
+    font-size: 12px;
+    padding: 10px 6px;
+  }
+  
+  .error {
+    font-size: 10px;
+    padding: 3px;
+  }
+}
+
+/* Toegevoegde code voor responsief ontwerp vanaf 400px*/
+@media (max-width: 400px) {
+  .login-container {
+    margin-top: -100px;
+    width: 80%;
+    padding: 11px;
+    box-sizing: border-box;
+  }
+
+  .login-container h1 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input {
+    font-size: 12px;
+    margin-bottom: 6px;
+    width: 100%;
+    margin-right: 95px; 
+  }
+
+  .form-group input[type="submit"] {
+    font-size: 12px;
+    padding: 12px 6px;
+    width: 100%;
+  }
+
+  .error {
+    font-size: 10px;
+    padding: 2px;
+    width: 100%;
+  }
+}
+
+/* Style voor oogje */
+.password-toggle {
+  position: relative;
+  display: inline-block;
+}
+
+.password-toggle input[type="password"] {
+  padding-right: 30px;
+}
+
+.password-toggle .toggle-password {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #646464;
+}
+
+.password-toggle .toggle-password:hover {
+  color: #0b0b0b;
+}
+
+.password-toggle input[type="password"]:focus + .toggle-password {
+  pointer-events: auto;
+}
+
+.password-toggle .toggle-password:hover img {
+  filter: brightness(80%);
+}
+
+@media (max-width: 400px) {
+  .password-toggle .toggle-password {
+    top:60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .password-toggle .toggle-password {
+    top:60%;
+  }
+}

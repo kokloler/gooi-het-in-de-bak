@@ -202,3 +202,19 @@ input[type="checkbox"]{
   overflow: hidden;
 }
 /* <---Einde NavBar---> */
+
+.login-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-button a {
+  color: #fff; /* Pas de gewenste tekstkleur aan */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 9px;
+}
+
+.login-button a:hover {
+  color: #b1b1b1; /* Pas de gewenste achtergrondkleur aan voor hover-effect */
+}

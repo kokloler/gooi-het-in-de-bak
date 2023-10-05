@@ -53,7 +53,7 @@ mysqli_close($conn);
     <link rel="stylesheet" type="text/css" href="..//faq/faq_form.css">
     <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
 </head>
-<body class="no-hamburger-menu">
+<body>
     <nav>
         <div class="logo">Gooi het in de bak</div>
         <ul>
@@ -69,7 +69,7 @@ mysqli_close($conn);
             <div id="message" class="<?php echo $messageClass; ?>"><?php echo $message; ?></div>
         </div>
     <?php endif; ?>
-
+    
     <main id="main_reg">
         <h1>Stel een vraag</h1>
         <div class="container">
