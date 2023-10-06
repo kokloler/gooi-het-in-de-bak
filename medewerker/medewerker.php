@@ -42,49 +42,53 @@ mysqli_close($conn);
     </nav>
 
     <div class="table-container">
-        <h2>Ingediende vragen</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Naam</th>
-                    <th>E-mail</th>
-                    <th>Vraag</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                    // Verbinding maken met de database
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "faq";
-                    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    <h2>Ingediende vragen</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Naam</th>
+                <th>E-mail</th>
+                <th>Vraag</th>
+                <th>Actie</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+                // Verbinding maken met de database
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "faq";
+                $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-                    if (!$conn) {
-                        die("Connection failed: " . mysqli_connect_error());
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                }
+
+                $sql = "SELECT naam, email, vraag FROM form"; // Query om gegevens op te halen
+
+                $result = mysqli_query($conn, $sql);
+
+                if (mysqli_num_rows($result) > 0) {
+                    while($row = mysqli_fetch_assoc($result)) {
+                        echo "<tr>";
+                        echo "<td>".$row['naam']."</td>";
+                        echo "<td>".$row['email']."</td>";
+                        echo "<td>".$row['vraag']."</td>";
+                        echo "<td><a href='verwijder_vraag.php?naam=" . $row['naam'] . "' class='delete-button'><i class='far fa-trash-alt'></i></a></td>";
+                        echo "</tr>";
                     }
+                } else {
+                    echo "<tr><td colspan='4'>Geen gegevens beschikbaar</td></tr>";
+                }
 
-                    $sql = "SELECT naam, email, vraag FROM form";
-                    $result = mysqli_query($conn, $sql);
+                mysqli_close($conn);
+            ?>
+        </tbody>
+    </table>
+</div>
 
-                    if (mysqli_num_rows($result) > 0) {
-                        while($row = mysqli_fetch_assoc($result)) {
-                            echo "<tr>";
-                            echo "<td>".$row['naam']."</td>";
-                            echo "<td>".$row['email']."</td>";
-                            echo "<td>".$row['vraag']."</td>";
-                            echo "</tr>";
-                        }
-                    } else {
-                        echo "<tr><td colspan='3'>Geen gegevens beschikbaar</td></tr>";
-                    }
-
-                    mysqli_close($conn);
-                ?>
-            </tbody>
-        </table>
-
-    <div class="overzicht-container">
+<div class="overzicht-container">
     <?php
         // Verbinding maken met de database
         $servername = "localhost";
@@ -97,13 +101,15 @@ mysqli_close($conn);
             die("Connection failed: " . mysqli_connect_error());
         }
 
-        $sql = "SELECT naam, email, vraag FROM form";
+        $sql = "SELECT naam, email, vraag FROM form"; // Query om gegevens op te halen
+
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
                 echo "<div class='overzicht-item'>";
-                echo "<strong>Naam:</strong> " . $row['naam'];
+                echo "<br>"; 
+                echo "<strong>Naam:</strong> " . $row['naam']; echo "<a href='verwijder_vraag.php?naam=" . $row['naam'] . "' class='delete-button'><i class='far fa-trash-alt'></i></a>";
                 echo "<br>";
                 echo "<strong>E-mail:</strong> " . $row['email'];
                 echo "<br>";
@@ -117,7 +123,6 @@ mysqli_close($conn);
         mysqli_close($conn);
     ?>
  </div>
-</div>
 
 </body>
 </html>

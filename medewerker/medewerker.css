@@ -1,11 +1,13 @@
 /* Tabelstijl */
 .table-container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 800px; /* Maximale breedte van 800px */
+    width: calc(100% - 50px); /* 100% min 20px aan beide zijden */
+    margin: 0 auto; /* Plaats de tabel in het midden van de pagina */
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
 }
 
 table {
@@ -32,24 +34,64 @@ table tbody tr:nth-child(even) {
 
 /* Responsieve lijststijl */
 .overzicht-container {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    max-width: calc(100% - 50px); 
+    margin: 10px auto; 
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: none;
 }
 
 .overzicht-item {
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .overzicht-item strong {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 6px;
+    margin-top: 12px;
 }
 
 .overzicht-item span {
     font-weight: bold;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Stijl voor de lijst op schermen kleiner dan 769px */
+@media (max-width: 768px) {
+    .overzicht-container {
+        display: block; /* Toon de lijst op kleinere schermen */
+    }
+
+    table {
+        display: none; /* Verberg de tabel op kleinere schermen */
+    }
+
+    h2 {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    }
+}
+
+@media (max-width: 450px) {
+    .overzicht-item strong {
+        font-size: 14px; /* Kleinere tekstgrootte voor kopjes */
+    }
+
+    .overzicht-item span {
+        font-size: 12px; /* Kleinere tekstgrootte voor de tekst in de tabel */
+    }
+
+    h2 {
+        font-size: 19px; /* Kleinere tekstgrootte voor h2 */
+    }
 }
 
 /* Stijl voor de lijst op grotere schermen */
@@ -59,7 +101,34 @@ table tbody tr:nth-child(even) {
     }
 }
 
-/* <--- Algemene pagina style ---> */
+/* Stijl voor de verwijderknop */
+.delete-button {
+    color: rgb(0, 0, 0); 
+    padding: 5px 10px; 
+    border: none; 
+    cursor: pointer; 
+    display: inline-block; /* Zet de knop als inline-blok om marges toe te passen */
+    margin-bottom: 10px; /* Voeg een marge aan de onderkant toe */
+}
+
+.delete-button i {
+    margin-left: 5px; 
+}
+
+.delete-button:hover {
+    color: red; 
+    transition: background-color 0.2s; 
+}
+
+.delete-button i {
+    transition: transform 0.2s; 
+}
+
+.delete-button:hover i {
+    transform: scale(1.2); 
+    transition: transform 0.2s; 
+}
+
 body {
     margin-top: 0px;
     margin-left: 0px;
@@ -131,13 +200,28 @@ nav ul li a:hover{
  nav .logo {
      font-size: 22px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
  }
+ .fa-door-open{
+    margin-right: -20px;
 }
-@media (max-width: 370px) {
+}
+@media (max-width: 410px) {
  nav .logo {
      font-size: 19px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
      margin-left: -30px;
  }
+ .fa-door-open{
+    margin-right: -19px;
+}
 } 
+@media (max-width: 320px) {
+    nav .logo {
+        font-size: 16px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+        margin-left: -35px;
+    }
+    .fa-door-open{
+        margin-right: -30px;
+    }
+   }
 }
 
 /* deur pictogram */
@@ -146,7 +230,7 @@ nav ul li a:hover{
      font-size: 24px; /* Grootte van het pictogram*/
      text-decoration: none; 
      transition: box-shadow 0.2s; /* Voeg een overgangseffect*/
-    margin-right: -22px; 
+    margin-right: -25px; 
 }
 /* Voeg schaduw toe bij hover */
 .icon-link:hover {
