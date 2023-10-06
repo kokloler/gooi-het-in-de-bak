@@ -108,12 +108,13 @@ mysqli_close($conn);
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
                 echo "<div class='overzicht-item'>";
-                echo "<br>"; 
-                echo "<strong>Naam:</strong> " . $row['naam']; echo "<a href='verwijder_vraag.php?naam=" . $row['naam'] . "' class='delete-button'><i class='far fa-trash-alt'></i></a>";
+                echo "<strong>Naam:</strong> " . $row['naam']; 
                 echo "<br>";
                 echo "<strong>E-mail:</strong> " . $row['email'];
                 echo "<br>";
                 echo "<strong>Vraag:</strong> " . $row['vraag'];
+                echo "<br>";
+                echo "<strong>Actie:</strong> <td><a href='verwijder_vraag.php?naam=" . $row['naam'] . "' class='delete-button'><i class='far fa-trash-alt'></i></a></td>";
                 echo "</div>";
             }
         } else {
