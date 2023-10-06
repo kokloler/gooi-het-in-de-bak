@@ -130,6 +130,7 @@ table tbody tr:nth-child(even) {
 }
 
 body {
+    background-color: rgb(249, 251, 253);
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;

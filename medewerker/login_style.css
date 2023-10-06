@@ -18,7 +18,7 @@ html {
   
   .login-container {
     width: 400px;
-    height: 400px;
+    height: 390px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,8 +29,8 @@ html {
   }
   
   .login-container h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: -100;
+    margin-bottom: 23px;
   }
   
   .form-group {
@@ -78,6 +78,20 @@ html {
 .form-group input[type="text"],
 .form-group input[type="password"] {
   box-sizing: border-box;
+}
+
+/* Stijl voor de terugknop */
+.back-button {
+  padding: 10px 20px;
+  color: #191919;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: right;
+  font-size: 18px;
+}
+
+.back-button:hover {
+  color: #0056b3;
 }
 
 /* Toegevoegde code voor responsief ontwerp vanaf 600px*/

@@ -87,6 +87,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="error"><?php echo $loginError; ?></div>
             <?php endif; ?>
         </form>
+
+        <div class="form-group">
+            <a href="..//frontpage/frontpage.html" class="back-button">Terug</a>
+        </div>
+        
     </div>
 </body>
 </html>
