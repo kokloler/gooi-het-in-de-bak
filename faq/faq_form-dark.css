@@ -1,0 +1,279 @@
+body {
+   background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+p {
+    font-size: 10px;
+    margin-top: 11px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: white;
+    
+}
+@media (max-width: 650px){
+    h1{
+      font-size: 30px;
+    }
+}
+@media (max-width: 300px){
+    h1{
+      font-size: 25px;
+    }
+}
+
+.container {
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto; /* Horizontaal centreren op de pagina */
+    background-color: black; /* Achtergrondkleur van de container */
+    border-radius: 2px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schaduw toevoegen */
+    margin-top: 20px; /* Ruimte boven de container toevoegen */
+    margin-bottom: 20px; /* Ruimte onder de container toevoegen */
+}
+
+#main_reg {
+    margin: 50px auto;
+    width: 90%;
+    text-align: left; /* Plaats de inhoud van de container aan de linkerkant */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Plaats de labels aan de linkerkant */
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: vertical;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#reg_button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block; /* Zet de verzendknop om naar inline-block */
+    margin-right: 10px; /* Voeg een rechtermarge toe om de knop van de invoervelden te scheiden */
+}
+
+#reg_button:hover {
+    background-color: #0056b3;
+}
+
+
+/* <--- Algemene pagina style ---> */
+body {
+     margin-top: 0px;
+     margin-left: 0px;
+     margin-right: 0px;
+}
+
+  footer {
+    background-color: #054c38;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer {
+    color: white;
+    font-size: 14px;
+}
+
+/* Footer op bodem houden*/
+main {
+  margin: 0 auto;
+  min-height: calc(125vh - 211px - 58px);
+}
+
+/* NavBar */
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background: #054c38;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #abcac1;
+  font-size: 30px;
+  font-weight: 600;
+}
+@media (max-width: 490px){
+  nav .logo{
+    font-size: 25px;
+  }
+}
+nav ul{
+  list-style: none; 
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #f2f2f2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Voeg een schaduw toe */
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+@media (max-width: 700px) {
+    nav .logo {
+        font-size: 25px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+    }
+}
+@media (max-width: 370px) {
+  nav .logo {
+      font-size: 22px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+  }
+}
+@media (max-width: 370px) {
+  nav .logo {
+      font-size: 19px; /* Verminder de tekstgrootte van de titel op kleinere schermen */
+      margin-left: -30px;
+  }
+} 
+}
+
+/* Weergave van tekst "Terug" op schermen groter dan 500px */
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.text-link {
+    display: inline;
+    margin-right: 20px; 
+}
+
+.icon-link {
+    display: none; /* Verberg het pijlpictogram standaard */
+}
+
+/* Toon pijlpictogram op schermen kleiner dan 500px */
+@media (max-width: 500px) {
+    .text-link {
+        display: none; /* Verberg de tekst "Terug" */
+    }
+
+    .icon-link {
+        display: inline; /* Toon het pijlpictogram */
+        font-size: 24px; /* Grootte van het pictogram*/
+        text-decoration: none; 
+        transition: box-shadow 0.2s; /* Voeg een overgangseffect*/
+        margin-right: -22px; 
+    }
+
+    /* Voeg schaduw toe bij hover */
+    .icon-link:hover {
+        background-color: transparent;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    }
+}
+
+/* Meldingen voor fomulier */
+.validation-error {
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  border-radius: 1px;
+}
+
+.success-message {
+  color: #006400;
+  border: 1px solid #006400;
+  background-color: #90ee90;
+  border-radius: 1px;
+}
+
+.error-message {
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  border-radius: 1px;
+}
+
+.notification-container {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px #cccccc9c, -1px -1px 4px #cccccc9c;
+  text-align: center;
+  width: 300px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: -30px;
+  padding: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+  position: relative;
+}
+
+/* CSS voor de fade-out-animatie */
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease;
+}  
+
+.text1 {
+    color: white;
+}
