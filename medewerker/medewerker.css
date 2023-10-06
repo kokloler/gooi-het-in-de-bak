@@ -1,6 +1,6 @@
 /* Tabelstijl */
 .table-container {
-    max-width: 800px; /* Maximale breedte van 800px */
+    max-width: 890px; /* Maximale breedte van 800px */
     width: calc(100% - 50px); /* 100% min 20px aan beide zijden */
     margin: 0 auto; /* Plaats de tabel in het midden van de pagina */
     background-color: white;
@@ -101,17 +101,18 @@ table tbody tr:nth-child(even) {
     }
 }
 
-/* Stijl voor de verwijderknop */
-.delete-button {
+/* Stijl voor de verwijder en mail-button */
+.delete-button,
+.mail-button {
     color: rgb(0, 0, 0); 
     padding: 5px 10px; 
     border: none; 
     cursor: pointer; 
-    display: inline-block; /* Zet de knop als inline-blok om marges toe te passen */
-    margin-bottom: 10px; /* Voeg een marge aan de onderkant toe */
+    display: inline-block; 
 }
 
-.delete-button i {
+.delete-button i,
+.mail-button i {
     margin-left: 5px; 
 }
 
@@ -120,14 +121,22 @@ table tbody tr:nth-child(even) {
     transition: background-color 0.2s; 
 }
 
-.delete-button i {
+.mail-button:hover {
+    color: rgb(0, 106, 255); 
+    transition: background-color 0.2s; 
+}
+
+.delete-button i,
+.mail-button i {
     transition: transform 0.2s; 
 }
 
-.delete-button:hover i {
+.delete-button:hover i,
+.mail-button:hover i {
     transform: scale(1.2); 
     transition: transform 0.2s; 
 }
+
 
 body {
     background-color: rgb(249, 251, 253);
