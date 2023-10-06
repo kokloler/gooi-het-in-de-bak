@@ -1,14 +1,14 @@
 /* Algemene style voor alle pagina's */
 
 body {
-    background-image: linear-gradient(rgb(221, 255, 187), rgba(221, 255, 187, 0.7)), url("../images/background.jpg");
+    background-color: black;
      margin-top: 0px;
      margin-left: 0px;
      margin-right: 0px;
 }
 
   footer {
-    background-color: #054c38;
+    background-color: black;
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -34,8 +34,8 @@ main {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #0074d9;
-  color: white;
+  background-color: white;
+  color: black;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -55,7 +55,7 @@ main {
 }
 
 .scroll-to-top-bubble.active:hover {
-  background-color: #0056b3;
+  background-color: whitesmoke;
 }
 
 /* NavBar */
@@ -72,14 +72,14 @@ nav{
   display: flex;
   height: 70px;
   width: 100%;
-  background: #054c38;
+  background: white;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
 }
 nav .logo{
-  color: #abcac1;
+  color: black;
   font-size: 30px;
   font-weight: 600;
 }
@@ -98,7 +98,7 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #f2f2f2;
+  color: black;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -110,11 +110,11 @@ nav ul li a{
 }
 nav ul li a.active,
 nav ul li a:hover{
-  color: #f2f2f2;
-  background: #058053;
+  color: white;
+  background: black;
 }
 nav .menu-btn i{
-  color: #94c3b2;
+  color: black;
   font-size: 28px; /*grote van "hamburger-meneu" knop*/
   cursor: pointer;
   display: none;
@@ -139,7 +139,7 @@ input[type="checkbox"]{
     position: fixed;
     top: 70px;
     left: -100%;
-    background: #d8fcb4;/*achtergrond kleur hamburger-meneu */
+    background: black;/*achtergrond kleur hamburger-meneu */
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -166,10 +166,10 @@ input[type="checkbox"]{
   nav ul li a.active,
   nav ul li a:hover{
     background: none;
-    color: #218569; /* active + hover tekst kleur */
+    color: white; /* active + hover tekst kleur */
   }
   nav .logo{
-    color: #93ada6;
+    color: black;
     font-size: 30px;
     font-weight: 600;
   }
@@ -194,7 +194,7 @@ input[type="checkbox"]{
   }
 }
   nav ul li a{
-    color: #2f8f74; /* Non-active tekst kleur */
+    color: white; /* Non-active tekst kleur */
   }
   
 }
@@ -220,18 +220,18 @@ input[type="checkbox"]{
 }
 
 .box {
-  border: 3px solid black;
-  margin-right: 15%;
-  margin-top: 20px;
-  margin-left: 15%;
-  background-color: #c4916e;
-  border-radius: 25px;
-  text-align: left;
-  padding-top: 2px;
-  padding-bottom: 200px;
-  padding-left: 15px;
-}
-
-div.text {
-  color: black;
-}
+    border: 3px solid white;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin-left: 15%;
+    background-color: black;
+    border-radius: 25px;
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 200px;
+    padding-left: 15px;
+  }
+  
+  div.text {
+    color: white;
+  }
