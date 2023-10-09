@@ -76,7 +76,7 @@ mysqli_close($conn);
                         echo "<td>".$row['naam']."</td>";
                         echo "<td>".$row['email']."</td>";
                         echo "<td>".$row['vraag']."</td>";
-                        echo "<td><a href='verwijder_vraag.php?naam=".$row['naam']."' class='delete-button' onclick='return confirmDelete();'><i class='far fa-trash-alt'></i></a><a href='mailto:" . $row['email'] . "?subject=Antwoord op uw vraag&body=Beste " . $row['naam'] . ",%0D%0A%0D%0AUw vraag was:%0D%0A" . $row['vraag'] . "%0D%0A%0D%0AVriendelijke groeten,%0D%0AJouw naam' class='mail-button'><i class='far fa-envelope'></i></a></td>";
+                        echo "<td><a href='verwijder_vraag.php?naam=".$row['naam']."' class='delete-button' onclick='return confirmDelete();'><i class='far fa-trash-alt'></i></a><a href='mailto:" . $row['email'] . "?subject=Antwoord op uw vraag&body=Beste " . $row['naam'] . ",%0D%0A%0D%0AUw vraag was:%0D%0A" . $row['vraag'] . "%0D%0A%0D%0AMet vriendelijke groet,%0D%0AJouw naam' class='mail-button'><i class='far fa-envelope'></i></a></td>";
                         echo "</tr>";
                     }
                 } else {
@@ -128,7 +128,4 @@ mysqli_close($conn);
  </div>
 
 </body>
-
-
-
 </html>

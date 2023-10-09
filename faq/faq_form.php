@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mysqli_query($conn, $sql)) {
             $messageClass = "success-message";
             $message = "Je vraag is ingediend!";
-            header("refresh:4;url=..//faq/faq.html");
+            header("refresh:4;url=..//faq/faq.php");
         } else {
             $messageClass = "error-message";
             $message = "Er is een fout opgetreden: " . mysqli_error($conn);

@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mysqli_query($conn, $sql)) {
             $messageClass = "success-message";
             $message = "Je vraag is ingediend!";
-            header("refresh:4;url=..//faq/faq.html");
+            header("refresh:4;url=..//faq/faq.php");
         } else {
             $messageClass = "error-message";
             $message = "Er is een fout opgetreden: " . mysqli_error($conn);
@@ -59,7 +59,7 @@ mysqli_close($conn);
         <ul>
             <li class="nav-item">
                 <a href="../faq/faq-dark.html" class="text-link">Terug</a>
-                <a href="../faq/faq.html" class="icon-link"><i class="fas fa-arrow-left"></i></a>
+                <a href="../faq/faq.php" class="icon-link"><i class="fas fa-arrow-left"></i></a>
             </li>
         </ul>
     </nav>
