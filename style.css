@@ -166,7 +166,7 @@ input[type="checkbox"]{
   nav ul li a.active,
   nav ul li a:hover{
     background: none;
-    color: #218569; /* active + hover tekst kleur */
+    color: #0f5340; /* active + hover tekst kleur */
   }
   nav .logo{
     color: #93ada6;

@@ -58,8 +58,8 @@ mysqli_close($conn);
         <div class="logo">Gooi het in de bak</div>
         <ul>
             <li class="nav-item">
-                <a href="../faq/faq.html" class="text-link">Terug</a>
-                <a href="../faq/faq.html" class="icon-link"><i class="fas fa-arrow-left"></i></a>
+                <a href="../faq/faq.php" class="text-link">Terug</a>
+                <a href="../faq/faq.php" class="icon-link"><i class="fas fa-arrow-left"></i></a>
             </li>
         </ul>
     </nav>

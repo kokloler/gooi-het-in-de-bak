@@ -23,7 +23,7 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="klanten.php">Klanten</a></li>
-            <li><a class="active" href="../faq/faq.html">FAQ</a></li>
+            <li><a class="active" href="../faq/faq.php">FAQ</a></li>
         </ul>
     </nav>
 
@@ -32,48 +32,40 @@
     </header>
     <main>
         <div class="container">
-            <div class="faq first-faq">
-                <div class="faq-question">
-                    <h2>Vraag 1</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Dit is het antwoord op vraag 1.</p>
-                </div>
-            </div>
-            
-            <div class="faq">
-                <div class="faq-question">
-                    <h2>Vraag 2</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Dit is het antwoord op vraag 2.</p>
-                </div>
-            </div>
+            <?php
+            // Verbinding maken met de database
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "faq";
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-            <div class="faq">
-                <div class="faq-question">
-                    <h2>Vraag 3</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Dit is het antwoord op vraag 3.</p>
-                </div>
-            </div>
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
 
-            <div class="faq last-faq">
-                <div class="faq-question">
-                    <h2>Vraag 4</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Dit is het antwoord op vraag 4.</p>
-                </div>
-            </div>
-            
-            <!-- Voeg meer vragen en antwoorden toe zoals hierboven -->
-    
+            $sql = "SELECT vraag, antwoord FROM faq"; // Query om gegevens op te halen
+
+            $result = mysqli_query($conn, $sql);
+
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '<div class="faq">';
+                    echo '<div class="faq-question">';
+                    echo '<h2>' . $row['vraag'] . '</h2>';
+                    echo '<i class="fas fa-chevron-down"></i>';
+                    echo '</div>';
+                    echo '<div class="faq-answer">';
+                    echo '<p>' . $row['antwoord'] . '</p>';
+                    echo '</div>';
+                    echo '</div>';
+                }
+            } else {
+                echo "<p>Geen vragen en antwoorden beschikbaar.</p>";
+            }
+
+            mysqli_close($conn);
+            ?>
         </div>
 
         <div class="faq-help">
