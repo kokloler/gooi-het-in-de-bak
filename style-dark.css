@@ -236,14 +236,17 @@ input[type="checkbox"]{
     color: white;
   }
 
-  .buttondark{
+  .buttondark {
     margin-left: 90%;
     margin-right: 10px;
-    border-radius: 0;
+    margin-top: 19px;
     border: none;
     transition-duration: 0.4s;
+    font-size: 29px;
+    background-color: transparent;
+    color: white;
   }
   .buttondark:hover {
-    background-color: black;
-    color: white;
+    scale: 1.09;
+    cursor: pointer;
   }
