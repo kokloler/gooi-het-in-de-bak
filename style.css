@@ -28,7 +28,7 @@ main {
   min-height: calc(125vh - 211px - 58px);
 }
 
-/* bubble */
+/* scroll to top bubble */
 .scroll-to-top-bubble {
   display: none;
   position: fixed;
