@@ -235,3 +235,15 @@ input[type="checkbox"]{
   div.text {
     color: white;
   }
+
+  .buttondark{
+    margin-left: 90%;
+    margin-right: 10px;
+    border-radius: 0;
+    border: none;
+    transition-duration: 0.4s;
+  }
+  .buttondark:hover {
+    background-color: black;
+    color: white;
+  }
