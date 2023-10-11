@@ -28,7 +28,7 @@
         </ul>
     </nav>
 
-    <button type="button" class="buttondark" onclick="window.location.href='faq-dark.php';">
+    <button type="button" class="buttondark" onclick="window.location.href='faq-dark.html';">
         <i class="far fa-adjust"></i>
     </button>
 
