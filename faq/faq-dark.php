@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ Page</title>
-    <link rel="stylesheet" type="text/css" href="faq.css">
-    <link rel="stylesheet" type="text/css" href="..//style.css">
+    <link rel="stylesheet" type="text/css" href="faq-dark.css">
+    <link rel="stylesheet" type="text/css" href="..//style-dark.css">
     <script src ="recyclen.js"> </script>
     <link rel="icon" type="image/x-icon" href="..//images/Trash.ico">
     <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
         </ul>
     </nav>
 
-    <button type="button" class="buttondark" onclick="window.location.href='faq-dark.html';">
+    <button type="button" class="buttondark" onclick="window.location.href='faq.php';">
         <i class="far fa-adjust"></i>
     </button>
 
