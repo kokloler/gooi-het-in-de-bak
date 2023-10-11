@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
     <script src="..//scripts/menu-script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jBx2/B5ybk+WMEyRSkaOTZ3TTx8U4JNjW7un9uyR0mLa7mT8Of91huy3C79bNYGSMvSO5pXJsge8rnt6/XFyMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
 </head>
 <body>
     <nav>
@@ -20,12 +21,16 @@
         <ul>
             <li><a href="../frontpage/frontpage.html">Home</a></li>
             <li><a href="../recyclen/recyclen.html">Recycling</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="../scheiden/scheiden.html">Afval scheiden</a></li>
+            <li><a href="../duurzaam/duurzaam.html">Duurzaam</a></li>
             <li><a href="../tips/tips.html">Tips</a></li>
             <li><a class="active" href="../faq/faq.php">FAQ</a></li>
         </ul>
     </nav>
+
+    <button type="button" class="buttondark" onclick="window.location.href='faq-dark.html';">
+        <i class="far fa-adjust"></i>
+    </button>
 
     <header>
         <h1>Veelgestelde vragen</h1>

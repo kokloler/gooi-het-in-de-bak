@@ -5,12 +5,13 @@
     <meta charset="utf-8" />
     <title>Afvalrecycling</title>
     <link rel="stylesheet" type="text/css" href="..//style-dark.css">
-    <script src ="recyclen.js"> </script>
+    <script src="recyclen.js"></script>
     <link rel="icon" type="image/x-icon" href="..//images/Trash.ico">
     <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
     <script src="..//scripts/menu-script.js"></script>
     <script src="..//scripts/scroll-to-top.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jBx2/B5ybk+WMEyRSkaOTZ3TTx8U4JNjW7un9uyR0mLa7mT8Of91huy3C79bNYGSMvSO5pXJsge8rnt6/XFyMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,34 +22,42 @@
         <ul>
             <li><a href="../frontpage/frontpage-dark.html">Home</a></li>
             <li><a class="active" href="../recyclen/recyclen.html">Recycling</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="../scheiden/scheiden-dark.html">Afval scheiden</a></li>
+            <li><a href="../duurzaam/duurzaam-dark.html">Duurzaam</a></li>
             <li><a href="../tips/tips-dark.html">Tips</a></li>
             <li><a href="../faq/faq-dark.html">FAQ</a></li>
         </ul>
     </nav>
-    
+
+    <button type="button" class="buttondark" onclick="window.location.href='recyclen.html';">
+        <i class="far fa-adjust"></i>
+    </button>
+
     <main>
-        <div class="box"> <!-- have any information text be in the div with the class "box" otherwise the box breaks :D-->
-           <div class="text">this is the page about recycling</div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
+        <div class="box">
+            <!-- have any information text be in the div with the class "box" otherwise the box breaks :D-->
+            <div class="text">
+                Voordelen van recyclen
+                <br>1.	Het spaart grondstoffen uit: bijvoorbeeld bomen voor papier, aardolie voor plastic, (zeldzame) metalen voor apparaten en blik.
+                <br>2.	Landbouwgrond kan dan gebruikt worden om voedsel te verbouwen.
+                <br>3.	Recyclen kost meestal (veel) minder energie dan het winnen van grondstoffen en maken van nieuwe materialen. Voor nieuw aluminium is bijvoorbeeld 20 keer zoveel energie nodig als voor het omsmelten van oud aluminium. De kwaliteit van gerecyclede materialen is meestal net zo goed.
+                <br>4.	Recyclen zorgt voor minder broeikasgassen, dan afval verbranden.
+
+                <br><br><br>Wat gebeurt er met het gescheiden afval?
+                <br><br>Veel Nederlanders scheiden hun afval. Toch weten veel mensen niet wat er gebeurt met al het gescheiden afval. Er zijn wel geruchten dat het apart ingezamelde afval alsnog op een grote hoop belandt. Dat is niet waar (lees de fabels over afval scheiden). Glas, papier en karton, groente, fruit en tuinafval (gft), klein chemisch afval, plastic, blik, drinkpakken, elektrische apparaten, grof tuinafval, bouwafval, textiel en restafval worden allemaal apart verwerkt. Gescheiden afval dat erg vervuild is (daarmee bedoelen we: waar erg veel dingen bij zitten die er niet bij horen), kan noodgedwongen alsnog verbrand worden.
+                <br><br>Afval = waardevol
+                <br><br>Afval bevat veel waardevolle materialen die opnieuw te gebruiken zijn. Soms kun je iets in zijn geheel hergebruiken, zoals tweedehands kleding of meubels. Andere soorten afval worden uit elkaar gehaald zodat de materialen apart hergebruikt kunnen worden. Het zink uit oude batterijen wordt bijvoorbeeld gebruikt om zinken dakgoten van te maken. Wil je weten wat er met een bepaald soort afval gebeurt? Kijk dan bij die afvalsoort op Welk afval waar.
+                <br><br>Het afval dat niet gerecycled kan worden, gaat bijna allemaal naar de verbrandingsoven (afvalenergiecentrale). De verbranding levert energie op voor stroom of stadsverwarming. De restjes die overblijven na verbranding (dat noemen we 'slakken') kunnen voor een deel gebruikt worden voor de aanleg van wegen. Circa één halve procent van het huishoudelijk afval (bijvoorbeeld niet-recyclebaar bouw- en sloopafval) wordt gestort; dat gebeurt op een verantwoorde manier.
+                <br><br>Voorwaarde: zuiver afval
+                <br><br>Om gescheiden afval echt opnieuw te kunnen gebruiken, mogen er niet te veel dingen bij zitten die er niet bij horen (dat noemen we 'vervuiling'). Het lukt bijvoorbeeld niet om papier te recyclen als er veel plastic tussen zit, of als het papier vet is (daarom mogen dozen van afhaalpizza's met voedselresten niet bij het oud papier). Het recyclebedrijf moet dus eerst de vervuiling uit het gescheiden ingezamelde afval halen, voordat ze het afval kunnen verwerken. Dat kost tijd en geld.
+            </div>
+
+
         </div>
 
         <div id="scroll-to-top" class="scroll-to-top-bubble">
             <i class="fas fa-arrow-up"></i>
-        </div> 
+        </div>
     </main>
 
     <footer>
@@ -56,8 +65,8 @@
         <div class="login-button">
             <a href="../medewerker/login.php">Medewerker Login</a>
         </div>
-    </footer> 
-       
+    </footer>
+
 </body>
 
 </html>
