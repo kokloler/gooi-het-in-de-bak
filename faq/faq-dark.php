@@ -19,12 +19,12 @@
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
         <ul>
-            <li><a href="../frontpage/frontpage.html">Home</a></li>
-            <li><a href="../recyclen/recyclen.html">Recycling</a></li>
-            <li><a href="../scheiden/scheiden.html">Afval scheiden</a></li>
-            <li><a href="../duurzaam/duurzaam.html">Duurzaam</a></li>
-            <li><a href="../tips/tips.html">Tips</a></li>
-            <li><a class="active" href="../faq/faq.php">FAQ</a></li>
+            <li><a href="../frontpage/frontpage-dark.html">Home</a></li>
+            <li><a href="../recyclen/recyclen-dark.html">Recycling</a></li>
+            <li><a href="../scheiden/scheiden-dark.html">Afval scheiden</a></li>
+            <li><a href="../duurzaam/duurzaam-dark.html">Duurzaam</a></li>
+            <li><a href="../tips/tips-dark.html">Tips</a></li>
+            <li><a class="active" href="../faq/faq-dark.php">FAQ</a></li>
         </ul>
     </nav>
 
