@@ -75,7 +75,7 @@
 
         <div class="faq-help">
             <p>Geen antwoord op je vraag kunnen vinden?</p>
-            <a href="faq_form.php" class="ask-question-button">Stel een vraag</a>
+            <a href="faq_form-dark.php" class="ask-question-button">Stel een vraag</a>
         </div>
 
         <script src="faq.js"></script>
