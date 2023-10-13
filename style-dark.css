@@ -234,6 +234,7 @@ input[type="checkbox"]{
   
   div.text {
     color: white;
+      font-family: "Times New Roman", Times, serif;
   }
 
   .buttondark {
