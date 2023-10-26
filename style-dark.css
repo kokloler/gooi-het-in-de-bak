@@ -237,17 +237,9 @@ input[type="checkbox"]{
       font-family: "Times New Roman", Times, serif;
   }
 
-  .buttondark {
-    margin-left: 90%;
-    margin-right: 10px;
-    margin-top: 19px;
-    border: none;
-    transition-duration: 0.4s;
-    font-size: 29px;
-    background-color: transparent;
-    color: white;
-  }
-  .buttondark:hover {
-    scale: 1.09;
-    cursor: pointer;
+  .darkModeIconDark {
+    float: right;
+    scale: 50%;
+    margin-top: 0px;
+    filter: invert(100%);
   }
