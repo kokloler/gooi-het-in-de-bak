@@ -93,8 +93,8 @@ mysqli_close($conn);
     <?php
         // Verbinding maken met de database
         $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $username = "ubuntu";
+        $password = "12345678";
         $dbname = "faq";
         $conn = mysqli_connect($servername, $username, $password, $dbname);
 
