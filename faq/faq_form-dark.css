@@ -277,3 +277,10 @@ nav ul li a:hover{
 .text1 {
     color: white;
 }
+
+.darkModeIconDark {
+  float: right;
+  scale: 50%;
+  margin-top: 0px;
+  filter: invert(100%);
+}

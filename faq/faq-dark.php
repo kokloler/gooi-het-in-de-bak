@@ -28,9 +28,10 @@
         </ul>
     </nav>
 
-    <button type="button" class="buttondark" onclick="window.location.href='faq.php';">
-        <i class="far fa-adjust"></i>
-    </button>
+    <a href="faq.php" >
+            <img src = "../images/darkmodeicon.ico" class="darkModeIconDark" alt="darkmode">
+        </a>
+
 
     <header>
         <h1>Veelgestelde vragen</h1>
