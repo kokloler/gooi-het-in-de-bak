@@ -28,7 +28,7 @@ h1 {
     padding: 15px;
     margin: 0 auto; /* Horizontaal centreren op de pagina */
     background-color: #ffffff; /* Achtergrondkleur van de container */
-    border-radius: 9px;
+    border-radius: 7px;
     text-align: left;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schaduw toevoegen */
     margin-top: 20px; /* Ruimte boven de container toevoegen */
