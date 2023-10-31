@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ Page</title>
-    <link rel="stylesheet" type="text/css" href="faq.css">
-    <link rel="stylesheet" type="text/css" href="..//style.css">
+    <link rel="stylesheet" type="text/css" href="faq-dark.css">
+    <link rel="stylesheet" type="text/css" href="..//style-dark.css">
     <script src ="recyclen.js"> </script>
     <link rel="icon" type="image/x-icon" href="..//images/Trash.ico">
     <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
@@ -19,18 +19,18 @@
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
         <ul>
-            <li><a href="../frontpage/frontpage.html">Home</a></li>
-            <li><a href="../recyclen/recyclen.html">Recycling</a></li>
-            <li><a href="../scheiden/scheiden.html">Afval scheiden</a></li>
-            <li><a href="../duurzaam/duurzaam.html">Duurzaam</a></li>
-            <li><a href="../tips/tips.html">Tips</a></li>
-            <li><a class="active" href="../faq/faq.php">FAQ</a></li>
+            <li><a href="../frontpage/frontpage-dark.html">Home</a></li>
+            <li><a href="../recyclen/recyclen-dark.html">Recycling</a></li>
+            <li><a href="../scheiden/scheiden-dark.html">Afval scheiden</a></li>
+            <li><a href="../duurzaam/duurzaam-dark.html">Duurzaam</a></li>
+            <li><a href="../tips/tips-dark.html">Tips</a></li>
+            <li><a class="active" href="../faq/faq-dark.php">FAQ</a></li>
         </ul>
     </nav>
 
-    <a href="faq-dark.html" >
-            <img src = "../images/darkmodeicon.ico" class="darkmodeicon" alt="darkmode">
-        </a>
+    <button type="button" class="buttondark" onclick="window.location.href='faq.php';">
+        <i class="far fa-adjust"></i>
+    </button>
 
     <header>
         <h1>Veelgestelde vragen</h1>
@@ -40,8 +40,8 @@
             <?php
             // Verbinding maken met de database
             $servername = "localhost";
-            $username = "root";
-            $password = "";
+            $username = "ubuntu";
+            $password = "12345678";
             $dbname = "faq";
             $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -75,7 +75,7 @@
 
         <div class="faq-help">
             <p>Geen antwoord op je vraag kunnen vinden?</p>
-            <a href="faq_form.php" class="ask-question-button">Stel een vraag</a>
+            <a href="faq_form-dark.php" class="ask-question-button">Stel een vraag</a>
         </div>
 
         <script src="faq.js"></script>
