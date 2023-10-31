@@ -123,6 +123,10 @@ nav .menu-btn i{
 input[type="checkbox"]{
   display: none;
 }
+.frontpageImg{
+    width: 300px;
+    height: auto;
+}
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
@@ -227,8 +231,8 @@ input[type="checkbox"]{
   background-color: #c4916e;
   border-radius: 25px;
   text-align: left;
-  padding-top: 2px;
-  padding-bottom: 200px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   padding-left: 15px;
 }
 
