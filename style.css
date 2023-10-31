@@ -130,6 +130,9 @@ input[type="checkbox"]{
 .subText{
     font-size: 20px;
 }
+.subText2 {
+    font-size: 15px;
+}
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
