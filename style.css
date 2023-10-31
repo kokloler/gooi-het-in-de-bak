@@ -127,8 +127,8 @@ input[type="checkbox"]{
     width: 300px;
     height: auto;
 }
-.p{
-    font-size: 30px;
+.subText{
+    font-size: 20px;
 }
 @media (max-width: 1000px){
   nav{
