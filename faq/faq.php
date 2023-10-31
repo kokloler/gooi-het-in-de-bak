@@ -26,7 +26,7 @@
         </ul>
     </nav>
 
-    <a href="faq-dark.html" >
+    <a href="faq-dark.php" >
             <img src = "../images/darkmodeicon.ico" class="darkmodeicon" alt="darkmode">
         </a>
 

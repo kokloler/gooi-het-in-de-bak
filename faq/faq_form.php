@@ -63,6 +63,10 @@ mysqli_close($conn);
             </li>
         </ul>
     </nav>
+    
+    <a href="faq_form-dark.php" >
+            <img src = "../images/darkmodeicon.ico" class="darkmodeicon" alt="darkmode">
+        </a>
 
     <?php if (isset($message)): ?>
         <div class="notification-container">
