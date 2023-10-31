@@ -51,7 +51,7 @@ mysqli_close($conn);
     <link rel="icon" type="image/x-icon" href="..//images/form.ico">
     <title>Stel een vraag</title>
     <link rel="stylesheet" type="text/css" href="..//faq/faq_form-dark.css">
-    <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
 </head>
 <body>
     <nav>

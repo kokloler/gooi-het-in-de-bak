@@ -28,7 +28,7 @@ mysqli_close($conn);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="..//images/overzicht.ico">
     <link rel="stylesheet" type="text/css" href="medewerker.css">
-    <script src="https://kit.fontawesome.com/13f83daf59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <title>Overzicht</title>
     <script> function confirmDelete() {return confirm("Weet je zeker dat je deze vraag wilt verwijderen?");}</script>
 </head>
