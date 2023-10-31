@@ -126,6 +126,7 @@ input[type="checkbox"]{
 .frontpageImg {
     width: 300px;
     height: auto;
+    filter: grayscale(100%);
 }
 .subText{
     font-size: 20px;
